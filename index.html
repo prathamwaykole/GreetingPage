@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Greeting App</title>
+<style>
+*{font-size:60px;font-family:ink free;}
+body{background-color:azure;}
+h1{background-color:black;color:white;width:50%;border-radius:50px;}
+</style>
+</head>
+<body>
+<center>
+<h1> Greating app</h1>
+<h2 id="msg"/>
+<script>
+let msg = document.getElementById("msg");
+let d = new Date();
+let hr = d.getHours();
+if(hr<12)
+msg.innerHTML = "Good morning";
+else if(hr<16)
+msg.innerHTML ="Good Afternoon";
+else
+msg.innerHTML = "Good Evening ";
+
+
+</script>
+</centre>
+</body>
+</html>
